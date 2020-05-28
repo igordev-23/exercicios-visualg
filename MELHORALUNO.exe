@@ -1,0 +1,41 @@
+Algoritmo "MelhorAluno"
+// 
+//  
+// Descrição   : Confere as notas dos alunos e mostra o melhor aluno(Boletim)
+// Autor(a)    : Igor Santos
+// Data atual  : 28/05/2020
+Var
+// Seção de Declarações das variáveis 
+       A, C: inteiro
+       N, MA: caractere
+       No, Maior: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval("--------------------------------------------")
+ escreval("                Escola Foda-se              ")
+ escreval("--------------------------------------------")
+ C <- 1
+ escreva("Quantos alunos tem na turma? ")
+ leia(A)
+ escreval("----------------------------------")
+ enquanto (C <= A) faca
+  escreval("Aluno ",C)
+  escreva("Nome do aluno: ")
+  leia(N)
+  escreva("Nota do aluno: ")
+  leia(No)
+  se (No > Maior) entao
+    Maior <- No
+    MA <- N
+  fimse
+  escreval("---------------------------------")
+  
+
+
+  C <- C + 1
+fimenquanto
+
+ escreval("A melhor nota da turma foi de ",MA," com a nota ",Maior)
+
+Fimalgoritmo
