@@ -1,0 +1,42 @@
+Algoritmo "AnalisadorValores"
+// Descrição   : Após o usuário inserir os 5 valores o analisador
+//               exibe a soma,média destes e a quantidade deles que
+//               são divisíveis por 5 e a quantidade dos que são
+//               nulos e a soma dos valores pares
+// Autor(a)    : Igor
+// Data atual  : 30/05/2020
+Var
+// Seção de Declarações das variáveis
+//V = Valor, Cont = Contador, S = Soma, QD5 = Qtde Divisíveis por 5,
+//NU = Qtde de Nulos, SP = Soma dos números pares, M = Média
+    V, Cont,S, QD5,NU,SP: inteiro
+    M: real
+
+Inicio
+
+  SP <- 0
+  NU <- 0
+  Para Cont <- 1 ate 5 faca
+   escreva("Digite um Valor: ")
+   leia(V)
+   S <- S + V
+   M <- S / 5
+   Se (V%5=0) Entao
+     QD5 <- Cont * 1
+     Cont <- Cont + QD5
+   Fimse
+   Se(V=0) entao
+     NU <- NU + 1
+   Fimse
+   Se(V%2=0) entao
+      SP <- SP + V
+   Fimse
+  FimPara
+  
+  Escreval("A soma dos 5 valores é ",S)
+  Escreval("A Média dos 5 valores é ",M)
+  Escreval("A quantidade de números dessa sequência divisiveis por 5 é ",QD5)
+  Escreval("A quantidade de números dessa sequência que são nulos é ",NU)
+  Escreval("A soma dos valores pares dessa sequencia é ",SP)
+  
+Fimalgoritmo
