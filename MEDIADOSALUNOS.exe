@@ -1,0 +1,40 @@
+Algoritmo "Boletim"
+// Descrição   : Verificando a média de alunos usando Passagem de parãmetros por referência na Subrotina Procedimento
+// Autor(a)    : Igor Dev
+// Data atual  : 03/06/2020
+Var
+// Seção de Declarações das variáveis
+     Nota1, nota2: real
+     Nome, resp: caractere
+
+procedimento Media(Var um, dois : real)
+
+var
+
+inicio
+ um <- (um+dois)/2
+Fimprocedimento
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc..
+Repita
+   Escreval("----------------------------------------------------------")
+   Escreval("|                      BOLETIM DO ALUNO                  |")
+   Escreval("----------------------------------------------------------")
+   Escreval(" ")
+   Escreva("Digite o nome do(a) aluno(a): ")
+   Leia(Nome)
+   Escreva("Digite a 1° nota de ",Nome,": ")
+   Leia(Nota1)
+   Escreva("Digite a 2° nota de ",Nome,": ")
+   leia(nota2)
+   Media(Nota1, nota2)
+   Escreval("A média de ",Nome," é ",Nota1:2:1)
+   Escreval("Quer verificar a média de outro aluno? [S/N] ")
+   Leia(resp)
+   Limpatela
+Ate(resp = "N") ou (resp = "n")
+
+
+
+Fimalgoritmo
